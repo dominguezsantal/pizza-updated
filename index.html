@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pizza Italia</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src= "js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src= "js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron jum">
+        <h1>Welcome to Pizza Italia!</h1>
+      </div>
+        <form id = "pizza-form">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Let's start what size of pizza you want?</h2>
+                <div class="form-group">
+              <label for="size">Size: </label>
+              <select id="size" name="size">
+                <option value="small">Small($6)</option>
+                <option value="medium">Medium($8)</option>
+                <option value="large">Large($10)</option>
+                <option value="x-large">Grande(X-Large($12))</option>
+              </select>
+            </div>
+              </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <h3>Toppings</h3>
+                      <h4>Let's choose your toppings:</h4>
+                      <h4>Meat Options:</h4>
+                      <input type="checkbox" id="meat" name="meat" value="chicken">
+                      <label for="meat1">Chicken($2)</label><br>
+                      <input type="checkbox" id="meat" name="meat" value="bacon">
+                      <label for="meat2">Bacon($2)</label><br>
+                      <input type="checkbox" id="meat" name="meat" value="pepperoni">
+                      <label for="meat3">Pepperoni($2)</label><br>
+                      <input type="checkbox" id="meat" name="meat" value="salmon">
+                      <label for="meat4">Salmon($2)</label><br>
+                      <input type="checkbox" id="meat" name="meat" value="steak">
+                      <label for="meat5">Steak($2)</label><br>
+                    </div>
+                      <div class="col-md-4">
+                      <div class="form-group">
+                        <h4>Cheese Options:</h4>
+                        <input type="checkbox" id="cheese" name="cheese" value="mozarella-cheese">
+                        <label for="cheese">Mozzarella($1.50)</label><br>
+                        <input type="checkbox" id="cheese" name="cheese" value="harvati-cheese">
+                        <label for="cheese">Harvati($1.50)</label><br>
+                        <input type="checkbox" id="cheese" name="cheese" value="provolone-cheese">
+                        <label for="cheese">Provolone($1.50)</label><br>
+                        <input type="checkbox" id="cheese" name="cheese" value="american-cheese">
+                        <label for="cheese">American($1.50)</label><br>
+                        <input type="checkbox" id="cheese" name="cheese" value="pepperJack-cheese">
+                        <label for="cheese">Pepper Jack($1.50)</label><br>
+                      </div>
+                    <div class="col-md-4">
+                    <div class="form-group">
+                      <h4>Veggie Options:</h4>
+                      <input type="checkbox" id="toppings" name="toppings" value="tomatoes">
+                      <label for="toppings">Tomatoes($0.50)</label><br>
+                      <input type="checkbox" id="toppings" name="toppings" value="bell peppers">
+                      <label for="toppings">Bell Peppers($0.50)</label><br>
+                      <input type="checkbox" id="toppings" name="toppings" value="onions">
+                      <label for="toppings">Onions($0.50)</label><br>
+                      <input type="checkbox" id="toppings" name="toppings" value="black olives">
+                      <label for="toppings">Black Olives($0.50)</label><br>
+                      <input type="checkbox" id="toppings" name="toppings" value="broccoli">
+                      <label for="toppings">Broccoli($0.50)</label><br>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="form-group">
+                      <h4>Fruit Options:</h4>
+                      <input type="checkbox" id="toppings" name="toppings" value="pineapple">
+                      <label for="toppings">Pineapple($0.50)</label><br>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <h4>Sauce Options:</h4>
+                        <input type="checkbox" id="sauce" name="sauce" value="tomato-sauce">
+                        <label for="sauce">Tomato Sauce($0.10)</label><br>
+                        <input type="checkbox" id="sauce" name="sauce" value="alfredo-sauce">
+                        <label for="sauce">Alfredo Sauce($0.10)</label><br>
+                      </div>
+                        <button id="submit" button class="btn btn-warning"  type="submit">Submit your order</button>
+                          </span>
+                        <div id="final-cost">
+                          <p><b>Your total is:</b>$<em id="show-cost"></em></p>
+                        </div>
+                    </div>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
